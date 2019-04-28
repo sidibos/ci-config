@@ -19,4 +19,4 @@ jobs:
   - get: prepaid-card
     trigger: true
   - task: run unit test
-    file: ci-config/tasks/run_tests.yml
+    file: ci-config/thg/tasks/run_tests.yml

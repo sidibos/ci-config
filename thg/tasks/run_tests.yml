@@ -10,4 +10,4 @@ inputs:
 - name: prepaid-card
 
 run:
-  path: ci-config/scripts/run_tests.sh
+  path: ci-config/thg/scripts/run_tests.sh
