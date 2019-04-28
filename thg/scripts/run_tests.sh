@@ -9,10 +9,9 @@ apt-get install -y git unzip
 
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
-composer install --no-progress --no-suggest
-
 cd prepaid-card
 
+composer install --no-progress --no-suggest
 
 # run tests
 set +e
