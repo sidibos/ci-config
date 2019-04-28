@@ -1,0 +1,22 @@
+---
+resources:
+- name: ci-config
+  type: git
+  source:
+    uri: https://github.com/sidibos/prepaid-card.git
+    branch: master
+
+- name: prepaid-card
+  type: git
+  source:
+    uri: https://github.com/sidibos/prepaid-card.git
+
+jobs:
+- name: unit-test-job
+  public: true
+  plan:
+  - get: ci-config
+  - get: prepaid-card
+    trigger: true
+  - task: run unit test
+    file: ci-config/tasks/run_tests.yml
