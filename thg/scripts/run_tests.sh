@@ -5,7 +5,7 @@ set -e -x
 
 apt-get update
 
-apt-get install -y git unzip
+apt-get install -y git zip unzip
 
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
