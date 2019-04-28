@@ -9,7 +9,7 @@ apt-get install -y git unzip
 
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
-cd prepaid-card
+cd moneymaker
 
 composer install --no-progress --no-suggest
 

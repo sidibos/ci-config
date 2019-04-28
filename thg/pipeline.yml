@@ -6,17 +6,17 @@ resources:
     uri: https://github.com/sidibos/ci-config.git
     branch: master
 
-- name: prepaid-card
+- name: moneymaker
   type: git
   source:
-    uri: https://github.com/sidibos/prepaid-card.git
+    uri: https://github.com/sidibos/moneymaker.git
 
 jobs:
 - name: unit-test-job
   public: true
   plan:
   - get: ci-config
-  - get: prepaid-card
+  - get: moneymaker
     trigger: true
   - task: run unit test
     file: ci-config/thg/tasks/run_tests.yml
