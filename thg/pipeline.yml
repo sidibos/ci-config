@@ -3,7 +3,7 @@ resources:
 - name: ci-config
   type: git
   source:
-    uri: https://github.com/sidibos/prepaid-card.git
+    uri: https://github.com/sidibos/ci-config.git
     branch: master
 
 - name: prepaid-card
