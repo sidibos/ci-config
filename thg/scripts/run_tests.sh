@@ -5,7 +5,9 @@ set -e -x
 
 apt-get update
 
-apt-get install -y git zip unzip
+apt-get install -y git unzip zlib1g-dev libzip-dev
+
+docker-php-ext-install zip
 
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
