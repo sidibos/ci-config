@@ -16,7 +16,7 @@ composer install --no-progress --no-suggest
 # run tests
 set +e
 
-php bin/phpunit tests
+php ./bin/phpunit tests
 
 TEST_EXIT_CODE=$?
 echo $TEST_EXIT_CODE
